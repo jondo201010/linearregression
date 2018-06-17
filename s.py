@@ -10,10 +10,10 @@ class Line:
         self.slope=(y2-y1)/(x2-x1)
         self.y_intercept=y2-self.slope*x2
 
-    def getSlope():
+    def getSlope(self):
         return self.slope
 
-    def getIntercept():
+    def getIntercept(self):
         return self.y_intercept
 
     def getDistance(self,x,y):
@@ -22,7 +22,7 @@ class Line:
 
 
 
-fullData=pd.read_csv("C://amit//Learn//Python//GitMcLearningCourseraCode//ipython-notebooks//data//ex1data1.txt", names=['Population','Profit'],header=None)
+fullData=pd.read_csv("linear_regression_data.txt", names=['Population','Profit'],header=None)
 
 #plt.plot(x=fullData['Population'], y=fullData['Profit'])
 
