@@ -7,6 +7,9 @@ from Line import Line
 
 
 
+
+
+
 def LoadDataPoints():
     return pd.read_csv("linear_regression_data.txt", names=['Population','Profit'],header=None);
 
@@ -36,9 +39,14 @@ def GetInitialGuessLine(fullData):
     return ln
 
 
-fullData = LoadDataPoints()
-currentGuessLine=GetInitialGuessLine(fullData)
-print(currentGuessLine.getDistance(10,13))
-plt.show()
+def main():
+    fullData = LoadDataPoints()
+    currentGuessLine=GetInitialGuessLine(fullData)
+    print(currentGuessLine.getDistance(10,13))
+    plt.show()  
+
+if __name__== "__main__":
+  main()
+
 
 

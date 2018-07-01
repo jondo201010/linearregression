@@ -15,3 +15,10 @@ class Line:
     def getDistance(self,x,y):
         dist=abs(self.y_intercept+self.slope*x-y)/(math.sqrt(1+self.slope**2))
         return dist
+
+    def getAverageDistance(self,dataFram):
+        dataFram[2]=getDistance(dataFram[0],dataFram[1]);
+        return dataFram[2].
+
+
+#  git config --global user.email "jondo201010@gmail.com"
